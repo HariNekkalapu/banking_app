@@ -17,8 +17,11 @@ public class Account {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    private String account_name;
 
     @Column(name = "account_holder_name")
     private String accountHolderName;
     private double balance;
 }
+
+
